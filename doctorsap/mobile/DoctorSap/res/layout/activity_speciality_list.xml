@@ -5,4 +5,15 @@
     android:background="#f7f7f7"
     android:orientation="vertical" >
 
+    <ListView
+        android:id="@+id/lvSpecialty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
 </LinearLayout>
