@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${doctorInstance?.hospital}">
+				<li class="fieldcontain">
+					<span id="hospital-label" class="property-label"><g:message code="doctor.hospital.label" default="Hospital" /></span>
+					
+						<span class="property-value" aria-labelledby="hospital-label"><g:link controller="hospital" action="show" id="${doctorInstance?.hospital?.id}">${doctorInstance?.hospital?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${doctorInstance?.specialty}">
 				<li class="fieldcontain">
 					<span id="specialty-label" class="property-label"><g:message code="doctor.specialty.label" default="Specialty" /></span>
