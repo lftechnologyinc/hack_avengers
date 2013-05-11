@@ -82,7 +82,6 @@
 	</head>
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<g:render template="/includes/navigation"/>
 		<div id="search-body" class="content scaffold-show" role="main">
 			<h1>Search A Doctor</h1>
 			<form action="search" >
