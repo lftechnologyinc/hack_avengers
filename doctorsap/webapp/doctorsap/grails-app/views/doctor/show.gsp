@@ -54,7 +54,7 @@
 				<li class="fieldcontain">
 					<span id="specialty-label" class="property-label"><g:message code="doctor.specialty.label" default="Specialty" /></span>
 					
-						<span class="property-value" aria-labelledby="specialty-label"><g:link controller="specialty" action="show" id="${doctorInstance?.specialty?.id}">${doctorInstance?.specialty?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="specialty-label"><g:fieldValue bean="${doctorInstance}" field="specialty"/></span>
 					
 				</li>
 				</g:if>

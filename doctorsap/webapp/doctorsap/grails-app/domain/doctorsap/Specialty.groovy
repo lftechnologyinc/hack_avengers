@@ -2,6 +2,8 @@ package doctorsap
 
 class Specialty {
 
+	static searchable = true 
+	
 	String name;
 	String tags;
 

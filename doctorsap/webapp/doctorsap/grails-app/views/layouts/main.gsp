@@ -19,8 +19,7 @@
 	</head>
 	<body>
 		<div id="grailsLogo" role="banner">
-		<a class="home" href="${createLink(uri: '/')}">DoctorSap
-<%--		<img src="${resource(dir: 'images', file: 'grails_logo.png', )}" alt="Grails"/>--%>
+		<a class="home" href="${createLink(uri: '/')}">	<img src="${resource(dir: 'images', file: 'logo.png', )}" alt="Grails"/>
 		</a></div>
 		<g:render template="/includes/navigation"/>
 		<g:layoutBody/>

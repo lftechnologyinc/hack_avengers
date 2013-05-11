@@ -86,10 +86,10 @@
 			<h1>Search A Doctor</h1>
 			<form action="search" >
 				<fieldset class="form">
-					<input type="text" name="search" />
+					<input type="text" name="search"/>
 				</fieldset>
 				<fieldset class="buttons">
-					<input type="submit" name="create" class="save" value="Search" />
+					<input type="submit" name="create" class="save" value="Search"/>
 				</fieldset>
 			<form>
 		</div>

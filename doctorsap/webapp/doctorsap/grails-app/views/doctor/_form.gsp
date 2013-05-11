@@ -25,12 +25,36 @@
 	</label>
 	<g:textField name="eduction" value="${doctorInstance?.eduction}"/>
 </div>
-
-<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty', 'error')} required">
-	<label for="specialty">
-		<g:message code="doctor.specialty.label" default="Specialty" />
+<fieldset class="embedded"><legend><g:message code="doctor.specialty.label" default="Specialty" /></legend>
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty.id', 'error')} required">
+	<label for="specialty.id">
+		<g:message code="doctor.specialty.id.label" default="Id" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="specialty" name="specialty.id" from="${doctorsap.Specialty.list()}" optionKey="id" required="" value="${doctorInstance?.specialty?.id}" class="many-to-one"/>
+	<g:field name="id" type="number" value="${specialtyInstance.id}" required=""/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty.name', 'error')} required">
+	<label for="specialty.name">
+		<g:message code="doctor.specialty.name.label" default="Name" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="name" required="" value="${specialtyInstance?.name}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty.tags', 'error')} ">
+	<label for="specialty.tags">
+		<g:message code="doctor.specialty.tags.label" default="Tags" />
+		
+	</label>
+	<g:textField name="tags" value="${specialtyInstance?.tags}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty.version', 'error')} required">
+	<label for="specialty.version">
+		<g:message code="doctor.specialty.version.label" default="Version" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="version" type="number" value="${specialtyInstance.version}" required=""/>
+</div>
+</fieldset>
