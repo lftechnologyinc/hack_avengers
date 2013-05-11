@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'fullName', 'error')} required">
+	<label for="fullName">
+		<g:message code="doctor.fullName.label" default="Full Name" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="fullName" required="" value="${doctorInstance?.fullName}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'liscenceNo', 'error')} required">
+	<label for="liscenceNo">
+		<g:message code="doctor.liscenceNo.label" default="Liscence No" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="liscenceNo" required="" value="${doctorInstance?.liscenceNo}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'eduction', 'error')} ">
 	<label for="eduction">
 		<g:message code="doctor.eduction.label" default="Eduction" />
@@ -10,19 +26,11 @@
 	<g:textField name="eduction" value="${doctorInstance?.eduction}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'fullName', 'error')} ">
-	<label for="fullName">
-		<g:message code="doctor.fullName.label" default="Full Name" />
-		
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty', 'error')} required">
+	<label for="specialty">
+		<g:message code="doctor.specialty.label" default="Specialty" />
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="fullName" value="${doctorInstance?.fullName}"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'liscenceNo', 'error')} ">
-	<label for="liscenceNo">
-		<g:message code="doctor.liscenceNo.label" default="Liscence No" />
-		
-	</label>
-	<g:textField name="liscenceNo" value="${doctorInstance?.liscenceNo}"/>
+	<g:select id="specialty" name="specialty.id" from="${doctorsap.Specialty.list()}" optionKey="id" required="" value="${doctorInstance?.specialty?.id}" class="many-to-one"/>
 </div>
 
