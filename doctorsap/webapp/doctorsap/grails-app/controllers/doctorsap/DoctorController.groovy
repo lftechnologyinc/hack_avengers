@@ -5,7 +5,7 @@ import org.springframework.dao.DataIntegrityViolationException
 class DoctorController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
-
+	
     def index() {
         redirect(action: "list", params: params)
     }
@@ -99,4 +99,15 @@ class DoctorController {
             redirect(action: "show", id: id)
         }
     }
+	
+	/**
+	 * Index page with search form and results
+	 */
+	def search = {
+		if (!params.q?.trim()) {
+			return [:]
+		}
+			def list= Doctor.executeQuery("select d.fullName, d.eduction, d.liscenceNo, s.name, h.name from Doctor d, Specialty s, Hospital h where s.id=d.specialty and h.id=d.hospital and (d.fullName like ? or h.name like ? or s.tags like ? or s.name like ?)",['%'+params.q+'%','%'+params.q+'%','%'+params.q+'%','%'+params.q+'%']);
+			return [doctorInstanceList: list, doctorInstanceTotal: list.size()]
+	}
 }

@@ -84,9 +84,9 @@
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="search-body" class="content scaffold-show" role="main">
 			<h1>Search A Doctor</h1>
-			<form action="search" >
+			<form action="doctor/search" >
 				<fieldset class="form">
-					<input type="text" name="search"/>
+					<input type="text" name="q" value = "${params.q }"/>
 				</fieldset>
 				<fieldset class="buttons">
 					<input type="submit" name="create" class="save" value="Search"/>

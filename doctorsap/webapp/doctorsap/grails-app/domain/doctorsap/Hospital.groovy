@@ -11,4 +11,7 @@ class Hospital {
 		contact blank:false ;
 		location blank:false ;
     }
+	String toString() {
+		name
+	}
 }
