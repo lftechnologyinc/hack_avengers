@@ -1074,7 +1074,6 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f040032;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
         public static final int homeAsUp=0x7f040006;
@@ -1118,9 +1117,6 @@ containing a value of this type.
         public static final int sherlock_spinner_item=0x7f030018;
         public static final int tab_indicator_holo=0x7f030019;
     }
-    public static final class menu {
-        public static final int doctor_sap=0x7f0b0000;
-    }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
@@ -1161,9 +1157,7 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
-        public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
-        public static final int hello_world=0x7f09000f;
     }
     public static final class style {
         /** 

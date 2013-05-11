@@ -382,7 +382,6 @@ int id abs__submit_area 0x7f04002f
 int id abs__textButton 0x7f040013
 int id abs__title 0x7f04001b
 int id abs__up 0x7f04000b
-int id action_settings 0x7f040032
 int id disableHome 0x7f040009
 int id edit_query 0x7f040026
 int id homeAsUp 0x7f040006
@@ -421,7 +420,6 @@ int layout activity_doctor_sap 0x7f030016
 int layout sherlock_spinner_dropdown_item 0x7f030017
 int layout sherlock_spinner_item 0x7f030018
 int layout tab_indicator_holo 0x7f030019
-int menu doctor_sap 0x7f0b0000
 int string abs__action_bar_home_description 0x7f090000
 int string abs__action_bar_up_description 0x7f090001
 int string abs__action_menu_overflow_description 0x7f090002
@@ -435,9 +433,7 @@ int string abs__searchview_description_submit 0x7f09000b
 int string abs__searchview_description_voice 0x7f09000c
 int string abs__shareactionprovider_share_with 0x7f090006
 int string abs__shareactionprovider_share_with_application 0x7f090007
-int string action_settings 0x7f09000e
 int string app_name 0x7f09000d
-int string hello_world 0x7f09000f
 int style AppBaseTheme 0x7f0a0059
 int style AppTheme 0x7f0a005a
 int style AutoCompleteTextViewDoctorSapTheme 0x7f0a005c
