@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="DoctorSapTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewDoctorSapTheme</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonDoctorSapTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonDoctorSapTheme</item>
+
+    <item name="android:tabWidgetStyle">@style/TabWidgetDoctorSapTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarDoctorSapTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarDoctorSapTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallDoctorSapTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleDoctorSapTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/activated_background_holo_light</item>
+
+    <!-- <item name="numberPickerStyle">@style/NumberPickerDoctorSapTheme</item> -->
+
+  </style>
+
+</resources>
