@@ -17,7 +17,7 @@ environments {
 			pooled = true
 			driverClassName = "com.mysql.jdbc.Driver"
 			username = "root"
-			password = ""
+			password = "liferay"
 			url = "jdbc:mysql://localhost/doctorsap"
         }
     }
@@ -33,7 +33,7 @@ environments {
 			pooled = true
 			driverClassName = "com.mysql.jdbc.Driver"
 			username = "root"
-			password = ""
+			password = "liferay"
 			url = "jdbc:mysql://localhost/doctorsap"
             properties {
                maxActive = -1

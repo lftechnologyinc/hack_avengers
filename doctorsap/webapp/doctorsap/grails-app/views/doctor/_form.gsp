@@ -25,6 +25,14 @@
 	</label>
 	<g:textField name="eduction" value="${doctorInstance?.eduction}"/>
 </div>
+
+<div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'hospital', 'error')} required">
+	<label for="hospital">
+		<g:message code="doctor.hospital.label" default="Hospital" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="hospital" name="hospital.id" from="${doctorsap.Hospital.list()}" optionKey="id" required="" value="${doctorInstance?.hospital?.id}" class="many-to-one"/>
+</div>
 <fieldset class="embedded"><legend><g:message code="doctor.specialty.label" default="Specialty" /></legend>
 <div class="fieldcontain ${hasErrors(bean: doctorInstance, field: 'specialty.id', 'error')} required">
 	<label for="specialty.id">

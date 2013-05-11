@@ -12,13 +12,4 @@ class Specialty {
 	String toString() {
 		name
 	}
-	
-	static searchFields = [
-		fields : [
-			'name',
-			'tags'
-		],
-		defaultField : 'name', //default filter field
-		defaultSort : 'name'
-	]
 }
