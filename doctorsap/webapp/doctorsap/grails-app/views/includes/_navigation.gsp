@@ -5,6 +5,7 @@
 <%--		<ul>--%>
 			<li><g:link controller="doctor">Doctors</g:link></li>
 			<li><g:link controller="specialty">Specialties</g:link></li>
+			<li><g:link controller="hospital">Hospitals</g:link></li>
 <%--		</ul>--%>
 <%--		<li><ahref="javascript:;">Specialty</a></li>--%>
 <%--		<ul>--%>
