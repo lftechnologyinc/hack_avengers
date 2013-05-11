@@ -14,6 +14,7 @@ public class SpecialityTask extends AsyncTask<Void, Integer, Boolean> {
 	
 	private Context context;
 	private ProgressDialog progress;
+	private ArrayList<Specialty> list;
 	
 	public SpecialityTask(Context context) {
 		this.context = context;
@@ -32,38 +33,43 @@ public class SpecialityTask extends AsyncTask<Void, Integer, Boolean> {
 	@Override
 	protected Boolean doInBackground(Void... params) {
 		
-		ArrayList<Specialty> list = new ArrayList<Specialty>();
+		list = new ArrayList<Specialty>();
 		
 		Specialty s = new Specialty("Gynaecology & Obstetrics", "uterus, women, ovarian, internal medicine");
 		Specialty s2 = new Specialty("Ophthalmology", "eye");
 		Specialty s3 = new Specialty("Gastroenterology", "digestive system");
+		Specialty s4 = new Specialty("Cardiology", "heart,  coronary artery disease");
+		Specialty s5 = new Specialty("ENT", "ear, nose, throat");
+		Specialty s6 = new Specialty("Radiology", "X-ray, radiography, ultrasound, computed tomography, CT , Video xray");
+		Specialty s7 = new Specialty("Urology", "urinary tract infections , kidney");
+		Specialty s8 = new Specialty("Orthopedic", "Knee , fracture , sports injuries, degenerative diseases ");
+		Specialty s9 = new Specialty("Nephrology", "acute renal failure, chronic kidney disease, hematuria, proteinuria, kidney stones,  Dialysis");
+		
+		list.add(s9);
+		list.add(s8);
+		list.add(s7);
+		list.add(s6);
+		list.add(s5);
+		list.add(s4);
 		list.add(s3);
 		list.add(s2);
+		list.add(s);
+		list.add(s9);
+		list.add(s8);
+		list.add(s7);
+		list.add(s6);
+		list.add(s5);
+		list.add(s4);
 		list.add(s3);
-		/*
-		 Gastroenterology-  digestive system 
-		 Neurology- nervous system, depression, dementia, Parkinson's disease, Alzheimer's disease, Huntington disease
-		 Psychiatry- mental disorders, severe learning disability, personality disorder
-		 Dental- teeth, gums, Dental fillings, Dental Scaling
-		 Physiotherapy General Paediatrics- Back pain, Neck pain and whiplash, Osteoporosis, Cerebral palsy, Falls and fractures
-		 Dermatology, Venereology & Leprology- skin, ance, allergy, fungal infections, sexual diseases
-		 Paediatric Surgery-  infants, children,
-		 Cardiology- heart,  coronary artery disease
-		 Oncology- cancer 
-		 Plastic Surgery
-		 ENT ( Ear Nose Throat)
-		 Radiology X-ray, radiography, ultrasound, computed tomography, CT , Video xray
-		 Urology - urinary tract infections , kidney
-		 Orthopedic - Knee , fracture , sports injuries, degenerative diseases 
-		 General Surgery -
-		 Nephrology-  acute renal failure, chronic kidney disease, hematuria, proteinuria, kidney stones,  Dialysis
-		 
-		 */
+		list.add(s2);
+		list.add(s);
+		
+		
 		Thread thread = new Thread() {
 			@Override
 			public void run() {
 				try {
-					sleep(2000);
+					sleep(4000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -78,7 +84,9 @@ public class SpecialityTask extends AsyncTask<Void, Integer, Boolean> {
 	protected void onPostExecute(Boolean result) {
 		if(result) {
 			progress.dismiss();
-			context.startActivity(new Intent(context, SpecialityList.class));
+			Intent intent = new Intent(context, SpecialityList.class);
+			intent.putParcelableArrayListExtra("list", list);
+			context.startActivity(intent);
 		}
 		
 	}
