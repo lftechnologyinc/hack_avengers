@@ -24,11 +24,13 @@
 				<thead>
 					<tr>
 					
-						<g:sortableColumn property="eduction" title="${message(code: 'doctor.eduction.label', default: 'Eduction')}" />
-					
 						<g:sortableColumn property="fullName" title="${message(code: 'doctor.fullName.label', default: 'Full Name')}" />
 					
 						<g:sortableColumn property="liscenceNo" title="${message(code: 'doctor.liscenceNo.label', default: 'Liscence No')}" />
+					
+						<g:sortableColumn property="eduction" title="${message(code: 'doctor.eduction.label', default: 'Eduction')}" />
+					
+						<th><g:message code="doctor.specialty.label" default="Specialty" /></th>
 					
 					</tr>
 				</thead>
@@ -36,11 +38,13 @@
 				<g:each in="${doctorInstanceList}" status="i" var="doctorInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${doctorInstance.id}">${fieldValue(bean: doctorInstance, field: "eduction")}</g:link></td>
-					
-						<td>${fieldValue(bean: doctorInstance, field: "fullName")}</td>
+						<td><g:link action="show" id="${doctorInstance.id}">${fieldValue(bean: doctorInstance, field: "fullName")}</g:link></td>
 					
 						<td>${fieldValue(bean: doctorInstance, field: "liscenceNo")}</td>
+					
+						<td>${fieldValue(bean: doctorInstance, field: "eduction")}</td>
+					
+						<td>${fieldValue(bean: doctorInstance, field: "specialty")}</td>
 					
 					</tr>
 				</g:each>
