@@ -32,8 +32,6 @@
 					
 						<th><g:message code="doctor.hospital.label" default="Hospital" /></th>
 					
-						<th><g:message code="doctor.specialty.label" default="Specialty" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -47,8 +45,6 @@
 						<td>${fieldValue(bean: doctorInstance, field: "eduction")}</td>
 					
 						<td>${fieldValue(bean: doctorInstance, field: "hospital")}</td>
-					
-						<td>${fieldValue(bean: doctorInstance, field: "specialty")}</td>
 					
 					</tr>
 				</g:each>

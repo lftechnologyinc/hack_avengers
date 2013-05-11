@@ -2,9 +2,6 @@ package doctorsap
 
 class Doctor {
 
-	static searchable = true
-	static embedded = ['specialty']
-
 	String fullName;
 	String eduction;
 	String liscenceNo;

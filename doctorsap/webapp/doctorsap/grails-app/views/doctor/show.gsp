@@ -59,15 +59,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${doctorInstance?.specialty}">
-				<li class="fieldcontain">
-					<span id="specialty-label" class="property-label"><g:message code="doctor.specialty.label" default="Specialty" /></span>
-					
-						<span class="property-value" aria-labelledby="specialty-label"><g:fieldValue bean="${doctorInstance}" field="specialty"/></span>
-					
-				</li>
-				</g:if>
-			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
